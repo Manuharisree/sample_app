@@ -1,7 +1,6 @@
 require 'spec_helper'
-include ApplicationHelper
 
-describe "Users pages" do
+describe "User pages" do
 
   subject { page }
 
@@ -9,6 +8,6 @@ describe "Users pages" do
     before { visit signup_path }
 
     it { should have_selector('h1',    text: 'Sign up') }
-    it { should have_selector('title', text: full_title('Sign up')) }
+    it { should have_selector('title', text: 'Sign up') }
   end
 end
